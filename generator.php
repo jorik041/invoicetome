@@ -84,7 +84,7 @@ $totalArray = $_POST['total'];
 date_default_timezone_set('Asia/Dhaka');
 
 //Create a new instance
-$invoice = new invoicr("A4",$currency,"en");
+$invoice = new invoicetome("A4",$currency,"en");
 
 //Set number format
 $invoice->setNumberFormat(',',' ');

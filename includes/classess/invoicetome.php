@@ -9,9 +9,8 @@
 
 require_once('req/autoload.php');
 
-class invoicr extends FPDF_rotation
+class invoicetome extends FPDF_Rotate
 {
-
     var $font = 'helvetica';
     var $columnOpacity = 0.06;
     var $columnSpacing = 0.3;
@@ -40,7 +39,7 @@ class invoicr extends FPDF_rotation
     var $sigName;
     var $sigDesig;
 
-    function invoicr($size='A4',$currency='$',$language='en')
+    function __construct($size='A4',$currency='$',$language='en')
     {
         $this->columns = 5;
         $this->items = array();
@@ -515,7 +514,7 @@ class invoicr extends FPDF_rotation
                 if($item['description'])
                 {
                     //Precalculate height
-                    $calculateHeight = new invoicr;
+                    $calculateHeight = new invoicetome;
                     $calculateHeight->addPage();
                     $calculateHeight->setXY(0,0);
                     $calculateHeight->SetFont($this->font,'',7);

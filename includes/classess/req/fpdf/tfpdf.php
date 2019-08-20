@@ -2,15 +2,15 @@
 /*******************************************************************************
 * tFPDF (based on FPDF 1.7)                                                    *
 *                                                                              *
-* Version:  1.24                                                               *
-* Date:     2011-09-24                                                         *
+* Version:  1.25                                                               *
+* Date:     2018-03-19                                                         *
 * Author:   Ian Back <ianb@bpm1.com>                                           *
 * License:  LGPL                                                               *
 *******************************************************************************/
 
-define('tFPDF_VERSION','1.24');
+define('tFPDF_VERSION','1.25');
 
-class FPDF
+class tFPDF
 {
 
 var $unifontSubset;
@@ -76,7 +76,7 @@ var $PDFVersion;         // PDF version number
 *                               Public methods                                 *
 *                                                                              *
 *******************************************************************************/
-function FPDF($orientation='P', $unit='mm', $size='A4')
+function __construct($orientation='P', $unit='mm', $size='A4')
 {
 	// Some checks
 	$this->_dochecks();
