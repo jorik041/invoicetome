@@ -40,7 +40,7 @@ class invoicr extends FPDF_rotation
     var $sigName;
     var $sigDesig;
 
-    function invoicr($size='A4',$currency='€',$language='en')
+    function invoicr($size='A4',$currency='$',$language='en')
     {
         $this->columns = 5;
         $this->items = array();

@@ -5,7 +5,7 @@
 ****************************************************************************/
 include('includes/common-functions.php');
 include('includes/thumbnail.php');
-include('includes/classess/invoicr.php');
+include('includes/classess/invoicetome.php');
 
 $message = '';
 

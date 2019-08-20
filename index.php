@@ -84,11 +84,12 @@
                     <select class="form-control" onchange="changeCurrency()" id="currency">
                         <option value="¥">Yuan (¥)</option>
                         <option value="£">Pound (£)</option>
-                        <option value="€" selected>Euro (€)</option>
-                        <option value="Rs">Pakistani Rupee (Rs)</option>
+                        <option value="€">Euro (€)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
                         <option value="AED">Durham (AED)</option>
                         <option value="RM">Malaysian Ranggit (RM)</option>
-                        <option value="$">Dollar ($)</option>
+                        <option value="BDT">Bangladeshi Taka (BDT)</option>
+                        <option value="$" selected>Dollar ($)</option>
                     </select>
                 </div>
             </div>
@@ -324,8 +325,8 @@
                 <div class="col-sm-4 cmp-pnl">
                     <div class="inner-cmp-pnl">
                         <h2>Select a Color</h2>
-                        <div id="colorSelector"><div style="background-color: #f7540e;"></div></div>
-                        <input type="hidden" class="form-control" name="pdfColor" id="pdfColor" value="#f7540e">
+                        <div id="colorSelector"><div style="background-color: #FD7272;"></div></div>
+                        <input type="hidden" class="form-control" name="pdfColor" id="pdfColor" value="#FD7272">
                         <small>Click on the color box and select a color of the invoice.</small>
                     </div>
                 </div>

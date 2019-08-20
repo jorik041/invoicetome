@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 /****************************************************************************
     included files
 ****************************************************************************/
-include('includes/classess/invoicr.php');
+include('includes/classess/invoicetome.php');
 include('includes/common-functions.php');
 include('includes/thumbnail.php');
 
